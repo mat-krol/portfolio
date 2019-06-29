@@ -1,8 +1,16 @@
 .BlockPortfolio {
-  background: #ebebeb;
+  background: #4287f5;
   width: 100%;
   max-width: 1100px;
   padding: 2rem;
   margin: 0 auto;
   box-sizing: border-box;
+  text-align: center;
+}
+
+.BlockPortfolioContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+  margin: 2rem -2rem;
 }

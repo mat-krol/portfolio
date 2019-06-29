@@ -6,20 +6,25 @@
 }
 
 .BlockHeader {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: end;
+  align-items: center;
   max-width: 1100px;
   padding: 1rem;
   margin: 0 auto;
 }
 
-.BlockHeader a {
+.BlockHeaderNav a {
   text-decoration: none;
-  color: black;
+  color: #2442bd;
+  text-transform: uppercase;
+  margin: 0 8px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  transition: 1
 }
 
-.BlockHeader > * {
-  margin: 0;
+.BlockHeaderNav a:hover {
+  color: #4287f5;
 }

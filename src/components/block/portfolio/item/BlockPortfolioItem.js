@@ -3,7 +3,7 @@ import classes from './BlockPortfolioItem.module.css'
 
 function BlockPortfolioItem(props) {
   return (
-    <div className={classes.BlockPortfolioItem} style={{ background: props.color}}>
+    <div className={classes.BlockPortfolioItem}>
     </div>
   )
 }

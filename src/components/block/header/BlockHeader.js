@@ -7,7 +7,11 @@ function BlockHeader(props) {
       <div className={classes.BlockHeader}>
         <span></span>
         <h1 style={{ justifySelf: "center" }}>Mat Krol</h1>
-        <a href="#portfolio" style={{ justifySelf: "end" }}>Portfolio</a>
+        <div className={classes.BlockHeaderNav}>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#portfolio">About</a>
+          <a href="#portfolio">Contact</a>
+        </div>
       </div>
     </div>
   )
