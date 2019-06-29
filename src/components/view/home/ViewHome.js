@@ -8,8 +8,8 @@ function ViewHome(props) {
   return (
     <>
       <BlockHeader />
-      <BlockPortfolio />
       <BlockSeparator />
+      <BlockPortfolio />
       {/* <div className={classes.ViewHome}>
       </div> */}
     </>

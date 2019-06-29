@@ -5,8 +5,9 @@ function BlockHeader(props) {
   return (
     <div className={classes.BlockHeaderHolder}>
       <div className={classes.BlockHeader}>
-        <h1>Name</h1>
-        <span>UI Designer | Front End Developer</span>
+        <span>UI Designer</span>
+        <h1>Mat Krol</h1>
+        <span style={{ justifySelf: "end" }}>Front End Developer</span>
       </div>
     </div>
   )
