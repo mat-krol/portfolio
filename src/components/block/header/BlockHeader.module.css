@@ -1,0 +1,19 @@
+.BlockHeaderHolder {
+  /* position: absolute; */
+  /* top: 0; */
+  width: 100%;
+  z-index: 250;
+}
+
+.BlockHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.BlockHeader > * {
+  margin: 0;
+}
