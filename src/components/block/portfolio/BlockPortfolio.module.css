@@ -11,6 +11,6 @@
 .BlockPortfolioContent {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 2rem;
-  margin: 2rem -2rem;
+  grid-gap: 1rem;
+  margin: 2rem;
 }
