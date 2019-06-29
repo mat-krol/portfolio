@@ -3,7 +3,7 @@ import classes from './BlockSeparator.module.css'
 
 function BlockSeparator(props) {
   return (
-    <div className={classes.BlockSeparatorHolder}>
+    <div className={classes.BlockSeparatorHolder} style={{ transform: props.rotated ? "rotate(180deg) scaleX(-1)" : "rotate(0)"}}>
       <svg viewBox="0 0 1100 300" className={classes.BlockSeparator} preserveAspectRatio="none">
         <defs>
           <clipPath id="_clipPath_zYpNHjHQEzDhmPJpokdxYw0hlx8Alyao">

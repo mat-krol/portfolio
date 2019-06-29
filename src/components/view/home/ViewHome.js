@@ -10,6 +10,7 @@ function ViewHome(props) {
       <BlockHeader />
       <BlockSeparator />
       <BlockPortfolio />
+      <BlockSeparator rotated />
       {/* <div className={classes.ViewHome}>
       </div> */}
     </>

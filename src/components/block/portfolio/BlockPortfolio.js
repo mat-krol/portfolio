@@ -3,8 +3,8 @@ import classes from './BlockPortfolio.module.css'
 
 function BlockPortfolio(props) {
   return (
-    <div className={classes.BlockPortfolio}>
-      <span>View Portfolio</span>
+    <div className={classes.BlockPortfolio} id="portfolio">
+      <span id="portfolio">View Portfolio</span>
       
     </div>
   )
