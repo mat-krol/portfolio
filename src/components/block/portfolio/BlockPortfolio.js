@@ -17,12 +17,9 @@ function BlockPortfolio(props) {
 }
 
 const list = [
-  { color: "white" },
-  { color: "#f3f3f3" },
-  { color: "white" },
-  { color: "#f3f3f3" },
-  { color: "white" },
-  { color: "#f3f3f3" },
+  { key: 1, heading: "Emmi.ai", subheading: "Static Pages", tech: "Gatsby, React.js, Photoshop", image: "emmi-thumb" },
+  { key: 2, heading: "Cambridge cLASs", subheading: "", tech: "Wordpress", image: "camclass-thumb" },
+  { key: 3, heading: "Cambridge cLASs", subheading: "", tech: "Wordpress", image: "camclass" }
 ]
 
 export default BlockPortfolio

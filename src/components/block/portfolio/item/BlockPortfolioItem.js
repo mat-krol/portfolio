@@ -5,9 +5,9 @@ function BlockPortfolioItem(props) {
   return (
     <div className={classes.BlockPortfolioItem}>
       <div className={classes.BlockPortfolioItemContent}>
-        <h2>Emmi.ai</h2>
-        <span>Static Pages</span>
-        <p>Gatsby, React, Photoshop</p>
+        <h2>{props.heading}</h2>
+        <span>{props.subheading}</span>
+        <p>{props.tech}</p>
       </div>
     </div>
   )
