@@ -9,10 +9,28 @@
   text-align: center;
 }
 
+.BlockPortfolio h2 {
+  margin: 0 0 4rem;
+}
+
 .BlockPortfolioContent {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  justify-items: center;
   grid-gap: 1rem;
   grid-row-gap: 2rem;
-  margin: 2rem;
+  margin: 2rem auto;
+}
+
+@media only screen and (min-width: 900px) {
+  .BlockPortfolioContent {
+    grid-template-columns: 1fr 1fr;
+    margin: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .BlockPortfolioContent {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
