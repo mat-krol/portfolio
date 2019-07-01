@@ -2,7 +2,19 @@
   width: 300px;
   height: 200px;
   background: #ffffff20;
-  background: url('../../../../images/emmi-thumb.png') center top / cover;
+  /* background: url('../../../../images/portfolio/emmi.png') center top / cover; */
+}
+
+.BlockPortfolioItemPolSoc {
+  background: url('../../../../images/portfolio/polsoc.png') center top / cover;
+}
+
+.BlockPortfolioItemEmmi {
+  background: url('../../../../images/portfolio/emmi.png') center top / cover;
+}
+
+.BlockPortfolioItemCamClass {
+  background: url('../../../../images/portfolio/camclass.png') center top / cover;
 }
 
 .BlockPortfolioItemContent {
@@ -13,8 +25,8 @@
   align-items: center;
   justify-content: center;
   color: white;
-  background: #4287f5e0;
-  background: radial-gradient(#4287f5e0, #4287f5a0);
+  background: #2442bde0;
+  background: radial-gradient(#2442bde0, #2442bda0);
   opacity: 0;
   transition: opacity ease 0.3s;
 }

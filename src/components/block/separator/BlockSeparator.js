@@ -11,9 +11,9 @@ function BlockSeparator(props) {
           </clipPath>
         </defs>
         <g clip-path="url(#_clipPath_zYpNHjHQEzDhmPJpokdxYw0hlx8Alyao)">
-          <rect x="0" y="0" width="550" height="300" transform="matrix(1,0,0,1,0,0)" fill="rgb(255,255,255)" />
-          <rect x="550" y="0" width="550" height="300" transform="matrix(1,0,0,1,0,0)" fill="rgb(243,243,243)" />
-          <polygon points="1100,300,0,300,550,0" fill="#4287f5" />
+          {/* <rect x="0" y="0" width="550" height="300" transform="matrix(1,0,0,1,0,0)" fill="rgb(255,255,255)" /> */}
+          {/* <rect x="550" y="0" width="550" height="300" transform="matrix(1,0,0,1,0,0)" fill="rgb(243,243,243)" /> */}
+          <polygon points="1100,300,0,300,550,0" fill="#2442bd" />
         </g>
       </svg>
     </div>

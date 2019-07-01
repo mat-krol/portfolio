@@ -17,9 +17,9 @@ function BlockPortfolio(props) {
 }
 
 const list = [
-  { key: 1, heading: "Emmi.ai", subheading: "Static Pages", tech: "Gatsby, React.js, Photoshop", image: "emmi-thumb" },
-  { key: 2, heading: "Cambridge cLASs", subheading: "", tech: "Wordpress", image: "camclass-thumb" },
-  { key: 3, heading: "Cambridge cLASs", subheading: "", tech: "Wordpress", image: "camclass" }
+  { key: 1, heading: "Emmi.ai", subheading: "Static Pages", tech: "Gatsby, React.js, Photoshop", image: "emmi" },
+  { key: 2, heading: "Cambridge cLASs", subheading: "Wordpress Site", tech: "Wordpress", image: "camclass" },
+  { key: 3, heading: "CU PolSoc", subheading: "Wordpress Site", tech: "Wordpress", image: "polsoc" }
 ]
 
 export default BlockPortfolio

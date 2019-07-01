@@ -22,7 +22,7 @@
   margin: 0 8px;
   font-size: 12px;
   letter-spacing: 1px;
-  transition: 1
+  transition: color ease 0.3s;
 }
 
 .BlockHeaderNav a:hover {
