@@ -5,6 +5,13 @@
   /* background: url('../../../../images/portfolio/emmi.png') center top / cover; */
 }
 
+@media only screen and (min-width: 1200px) {
+  .BlockPortfolioItem {
+    width: 360px;
+    height: 240px;
+  }
+}
+
 .BlockPortfolioItemPolSoc {
   background: url('../../../../images/portfolio/polsoc.png') center top / cover;
 }
