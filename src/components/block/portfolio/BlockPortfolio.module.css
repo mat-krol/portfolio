@@ -1,6 +1,7 @@
 .BlockPortfolio {
-  background: #2442bd;
-  color: white;
+  /* background: #2442bd; */
+  /* color: white; */
+  background: white;
   width: 100%;
   padding: 2rem 2rem 8rem;
   margin: 0 auto;
@@ -10,6 +11,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-bottom: 1px solid #2442bd;
 }
 
 .BlockPortfolio h2 {
@@ -33,7 +35,7 @@
 
 @media only screen and (min-width: 1200px) {
   .BlockPortfolioContent {
-    grid-template-columns: 360px 360px 360px;
-    grid-gap: 10px;
+    grid-template-columns: 350px 350px 350px;
+    grid-gap: 25px;
   }
 }

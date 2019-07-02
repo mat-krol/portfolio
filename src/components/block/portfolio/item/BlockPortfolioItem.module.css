@@ -7,8 +7,8 @@
 
 @media only screen and (min-width: 1200px) {
   .BlockPortfolioItem {
-    width: 360px;
-    height: 240px;
+    width: 350px;
+    height: 233px;
   }
 }
 
@@ -43,9 +43,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: white;
+  /* color: white; */
   background: #2442bde0;
-  background: radial-gradient(#2442bde0, #2442bda0);
+  background: #ffffffd0;
+  background: radial-gradient(#ffffffe0, #ffffff80);
   opacity: 0;
   transition: opacity ease 0.3s;
 }
@@ -57,7 +58,7 @@
 .BlockPortfolioItemContent span {
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #ffffffc0;
+  color: #000000c0;
   font-size: 12px;
 }
 

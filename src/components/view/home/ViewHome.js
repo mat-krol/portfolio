@@ -31,13 +31,14 @@ function ViewHome(props) {
       <SEO title="" keywords={[`mat krol`, `front end developer`, `software engineer`]} />
       <BlockHeader />
       <BlockBanner />
-      <BlockSeparator />
+      <BlockSeparator triangle />
       <div style={{ position: "relative" }}>
         <BlockPortfolio handleShow={handleShow} />
         <BlockCard show={showing} handleClose={handleClose} image={pic} />
         <Backdrop show={showing} onClick={handleClose} />
       </div>
       <BlockAbout />
+      <BlockSeparator />
       <BlockContact />
       {/* <div className={classes.ViewHome}>
       </div> */}
