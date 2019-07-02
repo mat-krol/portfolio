@@ -5,7 +5,7 @@ import BlockPortfolioItem from './item/BlockPortfolioItem';
 
 function BlockPortfolio(props) {
   return (
-    <div className={classes.BlockPortfolio} id="portfolio">
+    <div className={classes.BlockPortfolio}>
       {/* <h2 id="portfolio">Portfolio</h2> */}
       <div className={classes.BlockPortfolioContent}>
         {_.map(list, item => (

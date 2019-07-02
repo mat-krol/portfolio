@@ -5,19 +5,16 @@ import { MdClose } from 'react-icons/md';
 
 function BlockCard(props) {
   return (
-    <>
-      <div className={className(props)}>
-        <div className={classes.BlockCardExit}>
-          <MdClose onClick={props.handleClose} />
-        </div>
-        <div className={classes.BlockCardImage} />
-        <div className={classes.BlockCardCopy}>
-          <h2>Emmi.ai</h2>
-          <p>Worked on the front end of the site</p>
-        </div>
+    <div className={className(props)}>
+      <div className={classes.BlockCardExit}>
+        <MdClose onClick={props.handleClose} />
       </div>
-      <Backdrop show={props.show} onClick={props.handleClose} />
-    </>
+      <div className={classes.BlockCardImage} />
+      <div className={classes.BlockCardCopy}>
+        <h2>Emmi.ai</h2>
+        <p>Worked on the front end of the site</p>
+      </div>
+    </div>
   )
 }
 

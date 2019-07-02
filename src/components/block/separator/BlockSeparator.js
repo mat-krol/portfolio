@@ -16,7 +16,7 @@ function BlockSeparator(props) {
           <polygon points="1100,300,0,300,550,0" fill="#2442bd" />
         </g>
       </svg>
-      <h2 className={classes.BlockSeparatorText}>Portfolio</h2>
+      <h2 className={classes.BlockSeparatorText} id="#portfolio">Portfolio</h2>
     </div>
   )
 }

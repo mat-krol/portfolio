@@ -9,8 +9,8 @@ function BlockHeader(props) {
         <h1 style={{ justifySelf: "center" }}>Mat Krol</h1>
         <div className={classes.BlockHeaderNav}>
           <a href="#portfolio">Portfolio</a>
-          <a href="#portfolio">About</a>
-          <a href="#portfolio">Contact</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
         </div>
       </div>
     </div>

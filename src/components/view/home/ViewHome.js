@@ -7,6 +7,10 @@ import BlockSeparator from "../../block/separator/BlockSeparator";
 import BlockBanner from "../../block/banner/BlockBanner";
 import BlockCard from "../../block/card/BlockCard";
 import SEO from "../../seo";
+import BlockAbout from "../../block/about/BlockAbout";
+import Backdrop from "../../ui/backdrop/Backdrop";
+import { relative } from "path";
+import BlockContact from "../../block/contact/BlockContact";
 
 function ViewHome(props) {
   const [showing, setShowing] = React.useState(false)
@@ -25,8 +29,13 @@ function ViewHome(props) {
       <BlockHeader />
       <BlockBanner />
       <BlockSeparator />
-      <BlockPortfolio handleShow={handleShow} />
-      <BlockCard show={showing} handleClose={handleClose} />
+      <div style={{ position: "relative" }}>
+        <BlockPortfolio handleShow={handleShow} />
+        <BlockCard show={showing} handleClose={handleClose} />
+        <Backdrop show={showing} onClick={handleClose} />
+      </div>
+      <BlockAbout />
+      <BlockContact />
       {/* <div className={classes.ViewHome}>
       </div> */}
     </>
