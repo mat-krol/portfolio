@@ -1,16 +1,14 @@
 import React from "react"
 
-import classes from "./ViewHome.module.css"
+import Backdrop from "../../ui/backdrop/Backdrop";
+import BlockAbout from "../../block/about/BlockAbout";
+import BlockBanner from "../../block/banner/BlockBanner";
+import BlockCard from "../../block/card/BlockCard";
+import BlockContact from "../../block/contact/BlockContact";
 import BlockHeader from "../../block/header/BlockHeader";
 import BlockPortfolio from "../../block/portfolio/BlockPortfolio";
 import BlockSeparator from "../../block/separator/BlockSeparator";
-import BlockBanner from "../../block/banner/BlockBanner";
-import BlockCard from "../../block/card/BlockCard";
 import SEO from "../../seo";
-import BlockAbout from "../../block/about/BlockAbout";
-import Backdrop from "../../ui/backdrop/Backdrop";
-import { relative } from "path";
-import BlockContact from "../../block/contact/BlockContact";
 
 function ViewHome(props) {
   const [showing, setShowing] = React.useState(false)

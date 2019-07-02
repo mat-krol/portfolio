@@ -1,7 +1,7 @@
 import React from 'react'
 import classes from './BlockCard.module.css'
-import Backdrop from '../../ui/backdrop/Backdrop';
-import { MdClose } from 'react-icons/md';
+// import Backdrop from '../../ui/backdrop/Backdrop';
+// import { MdClose } from 'react-icons/md';
 
 function BlockCard(props) {
   return (

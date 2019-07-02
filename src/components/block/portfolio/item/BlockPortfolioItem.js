@@ -3,18 +3,20 @@ import classes from './BlockPortfolioItem.module.css'
 
 function BlockPortfolioItem(props) {
   return (
-    <div className={className(props.image)} onClick={() => props.onClick(props.image)}>
-      <div className={classes.BlockPortfolioItemContent}>
-        <h2>{props.heading}</h2>
-        <span>{props.subheading}</span>
-        <p>{props.tech}</p>
+    <div className={classes.BlockPortfolioItem}>
+      <div className={className(props.image)} onClick={() => props.onClick(props.image)}>
+        <div className={classes.BlockPortfolioItemContent}>
+          <h2>{props.heading}</h2>
+          <span>{props.subheading}</span>
+          <p>{props.tech}</p>
+        </div>
       </div>
     </div>
   )
 }
 
 const className = image => {
-  const arr = [classes.BlockPortfolioItem]
+  const arr = [classes.BlockPortfolioItemImage]
   image === "polsoc" && arr.push(classes.BlockPortfolioItemPolSoc);
   image === "emmi" && arr.push(classes.BlockPortfolioItemEmmi);
   image === "camclass" && arr.push(classes.BlockPortfolioItemCamClass);
