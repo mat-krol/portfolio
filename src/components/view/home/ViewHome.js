@@ -6,6 +6,7 @@ import BlockPortfolio from "../../block/portfolio/BlockPortfolio";
 import BlockSeparator from "../../block/separator/BlockSeparator";
 import BlockBanner from "../../block/banner/BlockBanner";
 import BlockCard from "../../block/card/BlockCard";
+import SEO from "../../seo";
 
 function ViewHome(props) {
   const [showing, setShowing] = React.useState(false)
@@ -20,6 +21,7 @@ function ViewHome(props) {
 
   return (
     <>
+      <SEO title="" keywords={[`mat krol`, `front end developer`, `software engineer`]} />
       <BlockHeader />
       <BlockBanner />
       <BlockSeparator />
