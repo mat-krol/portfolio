@@ -24,6 +24,18 @@
   background: url('../../../../images/portfolio/camclass.png') center top / cover;
 }
 
+.BlockPortfolioItemEmmiMobile {
+  background: url('../../../../images/portfolio/emmi-mobi-all.png') center top / cover;
+}
+
+.BlockPortfolioItemBrainliens {
+  background: url('../../../../images/portfolio/brainliens.png') center top / cover;
+}
+
+.BlockPortfolioItemMasternotes {
+  background: url('../../../../images/portfolio/masternotes.png') center top / cover;
+}
+
 .BlockPortfolioItemContent {
   width: 100%;
   height: 100%;

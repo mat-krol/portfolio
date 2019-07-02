@@ -16,8 +16,11 @@ function BlockPortfolioItem(props) {
 const className = image => {
   const arr = [classes.BlockPortfolioItem]
   image === "polsoc" && arr.push(classes.BlockPortfolioItemPolSoc);
-  image === "camclass" && arr.push(classes.BlockPortfolioItemCamClass);
   image === "emmi" && arr.push(classes.BlockPortfolioItemEmmi);
+  image === "camclass" && arr.push(classes.BlockPortfolioItemCamClass);
+  image === "brainliens" && arr.push(classes.BlockPortfolioItemBrainliens);
+  image === "masternotes" && arr.push(classes.BlockPortfolioItemMasternotes);
+  image === "emmi-mobile" && arr.push(classes.BlockPortfolioItemEmmiMobile);
   return arr.join(' ')
 }
 
