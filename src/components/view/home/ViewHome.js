@@ -27,7 +27,6 @@ function ViewHome(props) {
       <BlockSeparator />
       <BlockPortfolio handleShow={handleShow} />
       <BlockCard show={showing} handleClose={handleClose} />
-      <BlockSeparator rotated />
       {/* <div className={classes.ViewHome}>
       </div> */}
     </>
