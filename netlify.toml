@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "https://matkrol.netlify.com/*"
+  to = "https://matkrol.work/:splat"
+  force = true
