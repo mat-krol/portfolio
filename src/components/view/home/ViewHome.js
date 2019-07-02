@@ -14,13 +14,16 @@ import BlockContact from "../../block/contact/BlockContact";
 
 function ViewHome(props) {
   const [showing, setShowing] = React.useState(false)
+  const [pic, setPic] = React.useState(null)
 
   const handleClose = () => {
     setShowing(false)
+    setPic(null)
   }
 
-  const handleShow = () => {
+  const handleShow = image => {
     setShowing(true)
+    setPic(image)
   }
 
   return (
@@ -31,7 +34,7 @@ function ViewHome(props) {
       <BlockSeparator />
       <div style={{ position: "relative" }}>
         <BlockPortfolio handleShow={handleShow} />
-        <BlockCard show={showing} handleClose={handleClose} />
+        <BlockCard show={showing} handleClose={handleClose} image={pic} />
         <Backdrop show={showing} onClick={handleClose} />
       </div>
       <BlockAbout />

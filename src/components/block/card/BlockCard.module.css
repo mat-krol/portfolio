@@ -34,7 +34,7 @@
 }
 
 .BlockCardImage {
-  background: url('../../../images/emmi-desktop.png') center top / cover;
+  /* background: url('../../../images/emmi-desktop.png') center top / cover; */
   width: 100%;
   height: 300px;
   overflow-y: auto;
@@ -45,4 +45,28 @@
   padding: 1rem;
   box-sizing: border-box;
   border-top: 5px solid black;
+}
+
+.BlockPortfolioItemPolSoc {
+  background: url('../../../images/portfolio/polsoc.png') center top / cover;
+}
+
+.BlockPortfolioItemEmmi {
+  background: url('../../../images/portfolio/emmi.png') center top / cover;
+}
+
+.BlockPortfolioItemCamClass {
+  background: url('../../../images/portfolio/camclass.png') center top / cover;
+}
+
+.BlockPortfolioItemEmmiMobile {
+  background: url('../../../images/portfolio/emmi-mobi-all.png') center top / cover;
+}
+
+.BlockPortfolioItemBrainliens {
+  background: url('../../../images/portfolio/brainliens.png') center top / cover;
+}
+
+.BlockPortfolioItemMasternotes {
+  background: url('../../../images/portfolio/masternotes.png') center top / cover;
 }
