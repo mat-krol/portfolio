@@ -1,5 +1,6 @@
 import React from "react"
 
+import  './ViewHome.module.css';
 import Backdrop from "../../ui/backdrop/Backdrop";
 import BlockAbout from "../../block/about/BlockAbout";
 import BlockBanner from "../../block/banner/BlockBanner";
