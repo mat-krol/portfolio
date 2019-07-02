@@ -5,6 +5,7 @@ import BlockHeader from "../../block/header/BlockHeader";
 import BlockPortfolio from "../../block/portfolio/BlockPortfolio";
 import BlockSeparator from "../../block/separator/BlockSeparator";
 import BlockBanner from "../../block/banner/BlockBanner";
+import BlockCard from "../../block/card/BlockCard";
 
 function ViewHome(props) {
   return (
@@ -13,6 +14,7 @@ function ViewHome(props) {
       <BlockBanner />
       <BlockSeparator />
       <BlockPortfolio />
+      <BlockCard />
       <BlockSeparator rotated />
       {/* <div className={classes.ViewHome}>
       </div> */}

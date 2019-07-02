@@ -1,0 +1,24 @@
+.Backdrop {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -50vw;
+  margin-top: -50vh;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000;
+  /* background: #2442bd; */
+  z-index: 99;
+}
+
+.BackdropShow {
+  opacity: 0.65;
+  visibility: visible;
+  transition: opacity 0.5s ease 0.1s, visibility 0s ease 0s;
+}
+
+.BackdropHide {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease 0.1s, visibility 0s ease 0.5s;
+}

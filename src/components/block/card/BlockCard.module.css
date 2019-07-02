@@ -1,0 +1,30 @@
+.BlockCard {
+  position: relative;
+  background: white;
+  z-index: 100;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.BlockCardExit {
+  width: 100%;
+  padding: 8px;
+  font-size: 1.2rem;
+  line-height: 0;
+  box-sizing: border-box;
+  text-align: right;
+}
+
+.BlockCardImage {
+  background: url('../../../images/emmi-desktop.png') center top / cover;
+  width: 100%;
+  height: 300px;
+  overflow-y: auto;
+}
+
+.BlockCardCopy {
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+  border-top: 5px solid black;
+}
