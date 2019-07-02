@@ -9,7 +9,7 @@ function BlockPortfolio(props) {
       <h2 id="portfolio">Portfolio</h2>
       <div className={classes.BlockPortfolioContent}>
         {_.map(list, item => (
-          <BlockPortfolioItem { ...item } />
+          <BlockPortfolioItem { ...item } onClick={props.handleShow} />
         ))}
         </div>
     </div>
