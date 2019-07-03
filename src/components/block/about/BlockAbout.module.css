@@ -1,6 +1,36 @@
 .BlockAbout {
   width: 100%;
-  padding: 6rem 0 20rem;
+  padding: 12rem 1rem;
+  box-sizing: border-box;
   margin: 0 auto;
   text-align: center;
+}
+
+.BlockAbout > h2 {
+  margin: 0;
+}
+
+.BlockAboutContent {
+  max-width: 1200px;
+  width: 100%;
+  display: grid;
+  margin: 4rem auto;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 4rem;
+  grid-row-gap: 1rem;
+  text-align: left;
+  justify-content: center;
+}
+
+.BlockAboutContentCopy span {
+  display: block;
+}
+
+.BlockAboutContentCopy p {
+  margin-bottom: 3rem;
+}
+
+.BlockAboutContentImage {
+  background: url('../../../images/pic.png') center / contain;
+  background-repeat: no-repeat;
 }
