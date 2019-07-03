@@ -34,7 +34,6 @@ function ViewHome(props) {
         <BlockCard show={showing} handleClose={handleClose} image={pic} />
         <Backdrop show={showing} onClick={handleClose} />
       </div>
-      <BlockSeparator title="about" color="#2442bd" />
       <BlockAbout />
       <BlockSeparator wave title="contact" color="#2442bd" />
       <BlockContact />
