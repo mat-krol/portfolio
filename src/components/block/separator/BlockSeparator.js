@@ -12,7 +12,7 @@ function BlockSeparator(props) {
             </clipPath>
           </defs>
           <g clip-path="url(#_clipPath_R69NnAnFkb29WQ4xcTIKdoItPSEWyCPn)">
-            <polygon points="1242.857,300,-42.857,300,600,0" fill="none" vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(36,66,189)" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="5" />
+            {/* <polygon points="1242.857,300,-42.857,300,600,0" fill="none" vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(36,66,189)" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="5" />
             <polygon points="2807.143,1010,-1607.143,1010,600,-20" fill="none" vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(36,66,189)" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="5" />
             <polygon points="2807.143,990,-1607.143,990,600,-40" fill="none" vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(36,66,189)" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="5" />
             <polygon points="2807.143,970,-1607.143,970,600,-60" fill="none" vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(36,66,189)" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="5" />
@@ -26,7 +26,7 @@ function BlockSeparator(props) {
             <polygon points="1200,300,0,300,600,20" fill="rgb(36,66,189)" />
             <polygon points="2807.143,810,-1607.143,810,600,-220" fill="none" vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(36,66,189)" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="5" />
             <polygon points="2807.143,790,-1607.143,790,600,-240" fill="none" vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(36,66,189)" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="5" />
-            <polygon points="2807.143,770,-1607.143,770,600,-260" fill="none" vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(36,66,189)" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="5" />
+            <polygon points="2807.143,770,-1607.143,770,600,-260" fill="none" vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(36,66,189)" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="5" /> */}
             <polygon points="1200,300,0,300,600,20" fill="rgb(36,66,189)" />
           </g>
         </svg>

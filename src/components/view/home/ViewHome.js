@@ -27,10 +27,11 @@ function ViewHome(props) {
 
   return (
     <>
-      <SEO title="" keywords={[`mat krol`, `front end developer`, `software engineer`]} />
-      <BlockHeader />
+      <SEO title="Mat Krol - Portfolio" keywords={[`mat krol`, `front end developer`, `software engineer`]} />
+      {/* <BlockHeader /> */}
       <BlockBanner />
-      <BlockSeparator triangle title="portfolio" color="#2442bd" />
+      <BlockSeparator wave title="portfolio" color="#2442bd" />
+      {/* <BlockSeparator triangle title="portfolio" color="#2442bd" /> */}
       <div style={{ position: "relative" }}>
         <BlockPortfolio handleShow={handleShow} />
         <BlockCard show={showing} handleClose={handleClose} image={pic} />

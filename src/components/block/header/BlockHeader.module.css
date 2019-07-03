@@ -36,8 +36,8 @@
 
 .BlockHeaderNav a {
   text-decoration: none;
-  color: #333;
-  color: #2442bd;
+  /* color: #333; */
+  /* color: #2442bd; */
   text-transform: uppercase;
   margin: 0 8px;
   font-size: 12px;

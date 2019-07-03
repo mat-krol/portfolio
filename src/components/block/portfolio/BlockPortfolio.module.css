@@ -11,7 +11,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #2442bd;
+  /* background: #2442bd; */
+  background: white;
 }
 
 .BlockPortfolio h2 {
