@@ -7,13 +7,28 @@ function BlockSeparator(props) {
       <div className={classes.BlockSeparatorHolder}>
         <svg viewBox="0 0 1200 300"  className={classes.BlockSeparator} preserveAspectRatio="none">
           <defs>
-            <clipPath id="_clipPath_mN1cZdwAGGcYFGZO1uBwrrBeliFO0QWh">
-              <rect width="1200" height="300"/>
+            <clipPath id="_clipPath_R69NnAnFkb29WQ4xcTIKdoItPSEWyCPn">
+              <rect width="1200" height="300" />
             </clipPath>
           </defs>
-            <g clipPath="url(#_clipPath_mN1cZdwAGGcYFGZO1uBwrrBeliFO0QWh)">
-              <polygon points="1220,310,-20,310,600,0" fill="rgb(255,255,255)" vector-effect="non-scaling-stroke" strokeWidth="1" stroke={props.color} strokeLinejoin="miter" strokeLinecap="square" strokeMiterlimit="5"/>
-            </g>
+          <g clip-path="url(#_clipPath_R69NnAnFkb29WQ4xcTIKdoItPSEWyCPn)">
+            <polygon points="1242.857,300,-42.857,300,600,0" fill="none" vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(36,66,189)" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="5" />
+            <polygon points="2807.143,1010,-1607.143,1010,600,-20" fill="none" vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(36,66,189)" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="5" />
+            <polygon points="2807.143,990,-1607.143,990,600,-40" fill="none" vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(36,66,189)" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="5" />
+            <polygon points="2807.143,970,-1607.143,970,600,-60" fill="none" vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(36,66,189)" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="5" />
+            <polygon points="2807.143,950,-1607.143,950,600,-80" fill="none" vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(36,66,189)" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="5" />
+            <polygon points="2807.143,930,-1607.143,930,600,-100" fill="none" vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(36,66,189)" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="5" />
+            <polygon points="2807.143,910,-1607.143,910,600,-120" fill="none" vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(36,66,189)" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="5" />
+            <polygon points="2807.143,890,-1607.143,890,600,-140" fill="none" vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(36,66,189)" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="5" />
+            <polygon points="2807.143,870,-1607.143,870,600,-160" fill="none" vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(36,66,189)" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="5" />
+            <polygon points="2807.143,850,-1607.143,850,600,-180" fill="none" vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(36,66,189)" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="5" />
+            <polygon points="2807.143,830,-1607.143,830,600,-200" fill="none" vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(36,66,189)" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="5" />
+            <polygon points="1200,300,0,300,600,20" fill="rgb(36,66,189)" />
+            <polygon points="2807.143,810,-1607.143,810,600,-220" fill="none" vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(36,66,189)" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="5" />
+            <polygon points="2807.143,790,-1607.143,790,600,-240" fill="none" vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(36,66,189)" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="5" />
+            <polygon points="2807.143,770,-1607.143,770,600,-260" fill="none" vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(36,66,189)" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="5" />
+            <polygon points="1200,300,0,300,600,20" fill="rgb(36,66,189)" />
+          </g>
         </svg>
         <h2 className={classes.BlockSeparatorText} id={`#${props.title}`}>{props.title}</h2>
       </div>
@@ -60,7 +75,12 @@ function BlockSeparator(props) {
             </clipPath>
           </defs>
           <g clip-path="url(#_clipPath_jwCRgmVI8Kozblx3Qo4hYjE17omIu82m)">
-            <line x1="0" y1="80" x2="1200" y2="80" vector-effect="non-scaling-stroke" stroke-width="1" stroke={props.color} stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="3" />
+            <rect x="0" y="0" width="1200" height="100" transform="matrix(1,0,0,1,0,0)" fill="rgb(36,66,189)" />
+            <line x1="0" y1="120" x2="1200" y2="120" vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(36,66,189)" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="3" />
+            <line x1="0" y1="140" x2="1200" y2="140" vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(36,66,189)" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="3" />
+            <line x1="0" y1="160" x2="1200" y2="160" vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(36,66,189)" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="3" />
+            <line x1="0" y1="180" x2="1200" y2="180" vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(36,66,189)" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="3" />
+            <line x1="0" y1="200" x2="1200" y2="200" vector-effect="non-scaling-stroke" stroke-width="1" stroke="rgb(36,66,189)" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="3" />
           </g>
         </svg>
         <h2 className={classes.BlockSeparatorText} id={`#${props.title}`}>{props.title}</h2>

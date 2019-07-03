@@ -2,7 +2,8 @@
   position: relative;
   width: 300px;
   height: 200px;
-  background: #ffffff20;
+  /* background: #ffffff20; */
+  border: 1px solid #fff;
   border: 1px solid #2442bd;
 }
 
@@ -50,12 +51,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* color: white; */
-  background: #2442bd40;
+  color: white;
   background: #ffffffd0;
   background: radial-gradient(#ffffffe0, #ffffffc0);
+  background: radial-gradient(#2442bde0, #2442bdc0);
+  background: #2442bde0;
   opacity: 0;
   transition: opacity ease 0.3s;
+  border: 1px solid #fff;
+  box-sizing: border-box;
 }
 
 .BlockPortfolioItemContent h2 {
@@ -65,7 +69,7 @@
 .BlockPortfolioItemContent span {
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #000000c0;
+  color: #ffffffc0;
   font-size: 12px;
 }
 

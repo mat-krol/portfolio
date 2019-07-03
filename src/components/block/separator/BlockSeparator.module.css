@@ -17,6 +17,9 @@
   left: 0;
   margin: 0;
   bottom: 0;
+  text-transform: capitalize;
+  font-size: 2rem;
+  color: white;
   text-transform: uppercase;
   font-style: italic;
   letter-spacing: 3px;
