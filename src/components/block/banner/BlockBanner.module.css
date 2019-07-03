@@ -1,17 +1,27 @@
 .BlockBanner {
   margin: 0 auto;
   padding: 2rem 0;
-  height: 80vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .BlockBanner h1 {
   font-size: 5rem;
   margin: 0;
+}
+
+.BlockBanner h2 {
+  margin: 0 0 4px
+}
+
+.BlockBanner svg {
+  color: #666;
+  font-size: 0.8rem;
 }
 
 .BlockBanner p {
