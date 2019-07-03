@@ -72,13 +72,13 @@
 }
 
 .BlockPortfolioItemEmmiMobile {
-  background: url('../../../images/portfolio/emmi-mobi-all.png') center top / cover;
+  background: url('../../../images/portfolio/em.png') center top / cover;
 }
 
 .BlockPortfolioItemBrainliens {
-  background: url('../../../images/portfolio/brainliens.png') center top / cover;
+  background: url('../../../images/portfolio/bl.png') center top / cover;
 }
 
 .BlockPortfolioItemMasternotes {
-  background: url('../../../images/portfolio/masternotes.png') center top / cover;
+  background: url('../../../images/portfolio/mn.png') center top / cover;
 }

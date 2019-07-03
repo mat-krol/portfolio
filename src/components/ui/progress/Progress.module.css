@@ -1,0 +1,28 @@
+.ProgressHolder {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 80px auto 30px;
+  text-align: left;
+  grid-gap: 1rem;
+}
+
+.Progress {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.ProgressBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #2442bd;
+  height: 100%;
+}
+
+.ProgressText {
+  position: absolute;
+  right: 4px;
+  padding: 2px;
+  font-size: 0.8rem;
+}

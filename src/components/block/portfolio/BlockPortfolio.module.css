@@ -1,41 +1,24 @@
 .BlockPortfolio {
-  /* background: #2442bd; */
-  /* color: white; */
   background: white;
   width: 100%;
-  padding: 2rem 2rem 8rem;
   margin: 0 auto;
   box-sizing: border-box;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 1px solid #2442bd;
-}
-
-.BlockPortfolio h2 {
-  margin: 0 0 4rem;
 }
 
 .BlockPortfolioContent {
   display: grid;
-  grid-template-columns: 300px;
-  justify-items: center;
-  grid-gap: 1rem;
-  margin: 2rem auto;
+  grid-template-columns: 1fr;
+}
+
+@media only screen and (min-width: 600px) {
+  .BlockPortfolioContent {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media only screen and (min-width: 900px) {
   .BlockPortfolioContent {
-    grid-template-columns: 300px 300px;
-    margin: 2rem;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .BlockPortfolioContent {
-    grid-template-columns: 350px 350px 350px;
-    grid-gap: 25px;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }

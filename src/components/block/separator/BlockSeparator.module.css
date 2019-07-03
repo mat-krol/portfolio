@@ -5,28 +5,30 @@
 
 .BlockSeparator {
   width: 100%;
-  height: 80px;
+  height: 70px;
   margin: 0;
   margin-bottom: -5px;
 }
 
 .BlockSeparatorText {
   text-align: center;
+  width: 100%;
   position: absolute;
-  left: calc(50vw - 52px);
+  left: 0;
   margin: 0;
   bottom: 0;
+  text-transform: capitalize;
 }
 
 
 @media only screen and (min-width: 600px) {
   .BlockSeparator {
-    height: 120px;
+    height: 100px;
   }
 }
 
 @media only screen and (min-width: 900px) {
   .BlockSeparator {
-    height: 180px;
+    height: 150px;
   }
 }

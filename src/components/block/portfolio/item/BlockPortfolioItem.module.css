@@ -1,21 +1,19 @@
 .BlockPortfolioItem {
   position: relative;
-  width: 300px;
-  height: 200px;
-  background: #ffffff20;
-  border: 1px solid #2442bd;
+  width: 100%;
+  height: 67vw;
+  background: #f6f6f6;
 }
 
-.BlockPortfolioItemImage {
-  margin: 10px;
-  height: calc(100% - 20px);
-  width: calc(100% - 20px);
-}
-
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 600px) {
   .BlockPortfolioItem {
-    width: 350px;
-    height: 233px;
+    height: 33vw;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .BlockPortfolioItem {
+    height: 22vw;
   }
 }
 
@@ -32,15 +30,15 @@
 }
 
 .BlockPortfolioItemEmmiMobile {
-  background: url('../../../../images/portfolio/emmi-mobi-all.png') center top / cover;
+  background: url('../../../../images/portfolio/em.png') center top / cover, linear-gradient(#f3f3f3, #f3f3f3);
 }
 
 .BlockPortfolioItemBrainliens {
-  background: url('../../../../images/portfolio/brainliens.png') center top / cover;
+  background: url('../../../../images/portfolio/bl.png') center top / cover, linear-gradient(#f3f3f3, #f3f3f3);
 }
 
 .BlockPortfolioItemMasternotes {
-  background: url('../../../../images/portfolio/masternotes.png') center top / cover;
+  background: url('../../../../images/portfolio/mn.png') center top / cover, linear-gradient(#f3f3f3, #f3f3f3);
 }
 
 .BlockPortfolioItemContent {
@@ -50,10 +48,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* color: white; */
-  background: #2442bd40;
-  background: #ffffffd0;
-  background: radial-gradient(#ffffffe0, #ffffffc0);
+  background: #f6f6f6e0;
   opacity: 0;
   transition: opacity ease 0.3s;
 }

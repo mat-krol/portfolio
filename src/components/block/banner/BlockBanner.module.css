@@ -1,7 +1,46 @@
 .BlockBanner {
-  max-width: 1100px;
-  margin: 10rem auto 20rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  padding: 2rem 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   text-align: center;
+  box-sizing: border-box;
+}
+
+.BlockBanner h1 {
+  font-size: 5rem;
+  margin: 0;
+}
+
+.BlockBanner h2 {
+  margin: 0 0 4px
+}
+
+.BlockBanner svg {
+  color: #666;
+  font-size: 0.8rem;
+}
+
+.BlockBanner p {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+.BlockBannerNav a {
+  margin: 0 8px;
+  color: #000;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color ease 0.3s;
+}
+
+.BlockBannerNav a:hover {
+  padding-bottom: 8px;
+  border-bottom: 1px solid #2442bd;
+  color: #2442bd;
 }

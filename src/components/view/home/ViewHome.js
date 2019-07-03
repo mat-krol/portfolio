@@ -27,17 +27,15 @@ function ViewHome(props) {
 
   return (
     <>
-      <SEO title="" keywords={[`mat krol`, `front end developer`, `software engineer`]} />
-      <BlockHeader />
+      <SEO title="Mat Krol - Portfolio" keywords={[`mat krol`, `front end developer`, `software engineer`]} />
       <BlockBanner />
-      <BlockSeparator triangle />
       <div style={{ position: "relative" }}>
         <BlockPortfolio handleShow={handleShow} />
         <BlockCard show={showing} handleClose={handleClose} image={pic} />
         <Backdrop show={showing} onClick={handleClose} />
       </div>
       <BlockAbout />
-      <BlockSeparator />
+      <BlockSeparator wave title="contact" color="#2442bd" />
       <BlockContact />
       {/* <div className={classes.ViewHome}>
       </div> */}
