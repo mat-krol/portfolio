@@ -67,7 +67,7 @@ function BlockSeparator(props) {
     )
   } else {
     return (
-      <div className={classes.BlockSeparatorHolder}>
+      <div className={classes.BlockSeparatorHolder} style={{ background: "#f3f3f3"}}>
         <svg viewBox="0 0 1200 300" className={classes.BlockSeparator} preserveAspectRatio="none">
           <defs>
             <clipPath id="_clipPath_jwCRgmVI8Kozblx3Qo4hYjE17omIu82m">

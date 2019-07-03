@@ -21,15 +21,15 @@
   font-size: 2rem;
   color: white;
   text-transform: uppercase;
-  font-style: italic;
-  letter-spacing: 3px;
+  /* font-style: italic; */
+  letter-spacing: 1px;
   font-size: 2rem;
   color: white;
-  text-shadow:
+  /* text-shadow:
    -1px -1px 0 #2442bd,  
     1px -1px 0 #2442bd,
     -1px 1px 0 #2442bd,
-     1px 1px 0 #2442bd;
+     1px 1px 0 #2442bd; */
 }
 
 

@@ -3,14 +3,14 @@
   width: 300px;
   height: 200px;
   /* background: #ffffff20; */
-  border: 1px solid #fff;
   border: 1px solid #2442bd;
+  border: 1px solid #fff;
 }
 
 .BlockPortfolioItemImage {
-  margin: 10px;
-  height: calc(100% - 20px);
-  width: calc(100% - 20px);
+  margin: 4px;
+  height: calc(100% - 8px);
+  width: calc(100% - 8px);
 }
 
 @media only screen and (min-width: 1200px) {

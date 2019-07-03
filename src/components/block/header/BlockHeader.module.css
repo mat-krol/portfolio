@@ -3,7 +3,8 @@
   /* top: 0; */
   width: 100%;
   z-index: 250;
-  /* border-bottom: 1px solid #2442bd; */
+  /* background: #95cfff; */
+  /* border-bottom: 1px solid #95cfff; */
 }
 
 .BlockHeader {
@@ -18,8 +19,8 @@
 
 .BlockHeader h1 {
   text-transform: uppercase;
-  font-style: italic;
-  letter-spacing: 3px;
+  /* font-style: italic; */
+  letter-spacing: 1px;
   font-size: 2rem;
   /* color: white;
   text-shadow:
