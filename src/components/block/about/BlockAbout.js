@@ -5,7 +5,7 @@ import Progress from '../../ui/progress/Progress';
 
 function BlockAbout(props) {
   return (
-    <div className={classes.BlockAbout} id="#about">
+    <div className={classes.BlockAbout} id="about">
       <h2>About</h2>
       <div className={classes.BlockAboutContent}>
         {/* <div className={classes.BlockAboutContentImage}/> */}

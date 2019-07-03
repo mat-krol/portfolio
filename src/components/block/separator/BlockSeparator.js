@@ -51,7 +51,6 @@ function BlockSeparator(props) {
     )
   } else if (props.wave) {
     return (
-      <div className={classes.BlockSeparatorHolder}>
         <svg viewBox="0 0 1200 250"  className={classes.BlockSeparator} preserveAspectRatio="none">
           <defs>
             <clipPath id="_clipPath_rrO3p6oswYn16OxuRyK4aYyqjvHaF3uw">
@@ -62,8 +61,6 @@ function BlockSeparator(props) {
             <path d=" M 0 124 C 169.026 282.685 178.136 286.18 400 124 C 621.864 -38.18 578.864 -41.6 800 124 C 1021.136 289.6 987.535 285.938 1200 124" fill="none" vector-effect="non-scaling-stroke" strokeWidth="1" stroke={props.color} strokeLinejoin="miter" strokeLinecap="square" strokeMiterlimit="3"/>
           </g>
         </svg>
-        <h2 className={classes.BlockSeparatorText} id={`#${props.title}`}>{props.title}</h2>
-      </div>
     )
   } else {
     return (

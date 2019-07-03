@@ -15,7 +15,7 @@ function BlockBanner(props) {
         <p>I'm a web designer & a front end developer with a passion for clean and usable design</p>
       </div>
       <div>
-         <h2 id="#portfolio">Portfolio</h2> 
+         <h2 id="portfolio">Portfolio</h2> 
         <FaAngleDoubleDown />
       </div>
     </div>
