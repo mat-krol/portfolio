@@ -1,19 +1,18 @@
 .BlockPortfolioItem {
   position: relative;
   width: 100%;
-  height: 67vw;
+  height: 33vw;
   background: #f6f6f6;
-}
-
-@media only screen and (min-width: 600px) {
-  .BlockPortfolioItem {
-    height: 33vw;
-  }
+  display: flex;
 }
 
 @media only screen and (min-width: 900px) {
   .BlockPortfolioItem {
     height: 22vw;
+  }
+  
+  .BlockPortfolioItemContent span {
+    visibility: visible;
   }
 }
 
@@ -58,6 +57,7 @@
 }
 
 .BlockPortfolioItemContent span {
+  visibility: hidden;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #000000c0;

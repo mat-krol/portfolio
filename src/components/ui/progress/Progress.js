@@ -6,7 +6,7 @@ function Progress({ title, width }) {
   return (
     <div className={classes.ProgressHolder}>
       <span>{title}</span>
-      <div className={classes.Progress} style={{ background: `linear-gradient(90deg, #2442bd ${width}, #eee ${width})` }} />
+      <div className={classes.Progress} style={{ background: `linear-gradient(90deg, #2442bd ${width}, #fff ${width})` }} />
       <span>{width}</span>
     </div>
   )

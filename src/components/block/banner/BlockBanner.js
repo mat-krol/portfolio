@@ -11,7 +11,7 @@ function BlockBanner(props) {
           <a href="#contact">Contact</a>
       </div>
       <div>
-        <h1>Hi! My name is Mat Krol</h1>
+        <h1>Hi! My name is <span>Mat Krol</span></h1>
         <p>I'm a web designer & a front end developer with a passion for clean and usable design</p>
       </div>
       <div>

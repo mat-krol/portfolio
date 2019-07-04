@@ -1,5 +1,12 @@
 .BlockContact {
   width: 100%;
-  margin: 6rem auto 12rem;
+  padding: 4rem 1rem 6rem;
+  box-sizing: border-box;
   text-align: center;
+}
+
+@media only screen and (min-width: 900px) {
+  .BlockContact {
+    padding: 6rem 1rem 12rem;
+  }
 }
