@@ -7,11 +7,6 @@
   font-size: 14px;
 }
 
-.BlockAbout > h2 {
-  margin: 0;
-  font-size: 2rem;
-}
-
 .BlockAboutContent {
   max-width: 1200px;
   width: 100%;
@@ -25,9 +20,8 @@
 }
 
 .BlockAboutCopy {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin: 2rem 0;
-  display: block;
 }
 
 .BlockAboutContentImage {
@@ -47,5 +41,6 @@
 
   .BlockAboutCopy {
     margin: 4rem 0;
+    font-size: 1.2rem;
   }
 }

@@ -19,20 +19,6 @@
   white-space: nowrap;
 }
 
-@media only screen and (min-width: 900px) {
-  .BlockBanner {
-    height: 100vh;
-  }
-
-  .BlockBanner h1 {
-    font-size: 5rem;
-  }
-
-  .BlockBanner p {
-    font-size: 1.5rem;
-  }
-}
-
 .BlockBanner h2 {
   margin: 0 0 4px
 }
@@ -43,8 +29,22 @@
 }
 
 .BlockBanner p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 200;
+}
+
+@media only screen and (min-width: 900px) {
+  .BlockBanner {
+    height: 100vh;
+  }
+
+  .BlockBanner h1 {
+    font-size: 5rem;
+  }
+
+  .BlockBanner p {
+    font-size: 1.2rem;
+  }
 }
 
 .BlockBannerNav > a {

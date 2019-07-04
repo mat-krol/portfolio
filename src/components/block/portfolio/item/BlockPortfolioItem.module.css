@@ -6,16 +6,6 @@
   display: flex;
 }
 
-@media only screen and (min-width: 900px) {
-  .BlockPortfolioItem {
-    height: 22vw;
-  }
-  
-  .BlockPortfolioItemContent span {
-    visibility: visible;
-  }
-}
-
 .BlockPortfolioItemPolSoc {
   background: url('../../../../images/portfolio/polsoc.png') center top / cover;
 }
@@ -47,7 +37,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #f6f6f6e0;
+  background: #f6f6f6f0;
   opacity: 0;
   transition: opacity ease 0.3s;
 }
@@ -56,8 +46,11 @@
   margin: 0;
 }
 
-.BlockPortfolioItemContent span {
+.BlockPortfolioItemContent {
   visibility: hidden;
+}
+
+.BlockPortfolioItemContent span {
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #000000c0;
@@ -67,4 +60,14 @@
 .BlockPortfolioItem:hover .BlockPortfolioItemContent {
   opacity: 1;
   cursor: pointer;
+}
+
+@media only screen and (min-width: 900px) {
+  .BlockPortfolioItem {
+    height: 22vw;
+  }
+  
+  .BlockPortfolioItemContent {
+    visibility: visible;
+  }
 }

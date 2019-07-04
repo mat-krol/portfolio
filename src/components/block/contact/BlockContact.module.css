@@ -11,7 +11,7 @@
 
 .BlockContact > p {
   margin: 2rem 0;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 @media only screen and (min-width: 900px) {
@@ -25,5 +25,6 @@
 
   .BlockContact > p {
     margin: 4rem 0;
+    font-size: 1.2rem;
   }
 }
