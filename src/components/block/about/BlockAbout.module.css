@@ -1,6 +1,6 @@
 .BlockAbout {
   width: 100%;
-  padding: 12rem 1rem;
+  padding: 8rem 1rem 4rem;
   box-sizing: border-box;
   margin: 0 auto;
   text-align: center;
@@ -15,19 +15,40 @@
   width: 100%;
   display: grid;
   margin: 4rem auto;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-column-gap: 4rem;
   grid-row-gap: 1rem;
   text-align: left;
   justify-content: center;
 }
 
-.BlockAboutContentCopy span {
+@media only screen and (min-width: 900px) {
+  .BlockAbout {
+    padding: 12rem 1rem 8rem;
+  }
+
+  .BlockAboutContent {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .BlockAboutCopy span {
+    margin-top: 4rem;
+    display: block;
+  }
+
+  .BlockAboutCopy p {
+    margin-bottom: 4rem;
+  }
+
+}
+
+.BlockAboutCopy span {
+  margin-top: 2rem;
   display: block;
 }
 
-.BlockAboutContentCopy p {
-  margin-bottom: 3rem;
+.BlockAboutCopy p {
+  margin-bottom: 2rem;
 }
 
 .BlockAboutContentImage {
