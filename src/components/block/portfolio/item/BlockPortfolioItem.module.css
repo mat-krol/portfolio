@@ -10,6 +10,10 @@
   .BlockPortfolioItem {
     height: 22vw;
   }
+  
+  .BlockPortfolioItemContent span {
+    visibility: visible;
+  }
 }
 
 .BlockPortfolioItemPolSoc {
@@ -53,6 +57,7 @@
 }
 
 .BlockPortfolioItemContent span {
+  visibility: hidden;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #000000c0;

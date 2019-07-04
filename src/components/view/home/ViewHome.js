@@ -17,7 +17,9 @@ function ViewHome(props) {
 
   const handleClose = () => {
     setShowing(false)
-    setPic(null)
+    setTimeout(() => {
+      setPic(null)
+    }, 300);
   }
 
   const handleShow = image => {
