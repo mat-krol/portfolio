@@ -11,19 +11,26 @@
   font-size: 14px;
 }
 
+.Signup input::placeholder,
+.Signup textarea::placeholder {
+  color: black;
+  font-size: 14px;
+}
+
 .Signup input,
 .Signup textarea {
   display: block;
   width: 100%;
   padding: 0.5rem;
-  margin: 4px 0 8px;
+  margin: 4px 0 1rem;
   box-sizing: border-box;
   cursor: text;
   background: #ffffff;
   font-weight: 200;
   font-family: 'Open Sans', sans-serif;
   border: 1px solid #ccc;
-  /* border-radius: 1rem; */
+  font-size: 14px;
+
 }
 
 .Signup fieldset {
@@ -32,9 +39,6 @@
   padding: 0;
 }
 
-  .Signup label {
-    display: none;
-    text-align: left;
-    font-size: 0.8rem;
-    font-weight: 200;
-  }
+.Signup label {
+  display: none;
+}

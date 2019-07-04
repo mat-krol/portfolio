@@ -4,7 +4,7 @@
   box-sizing: border-box;
   margin: 0 auto;
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 14px;
 }
 
 .BlockAbout > h2 {
@@ -24,6 +24,18 @@
   justify-content: center;
 }
 
+.BlockAboutCopy {
+  font-size: 1.2rem;
+  margin: 2rem 0;
+  display: block;
+}
+
+.BlockAboutContentImage {
+  background: url('../../../images/pic.png') center / contain;
+  background-repeat: no-repeat;
+}
+
+
 @media only screen and (min-width: 900px) {
   .BlockAbout {
     padding: 14rem 1rem 10rem;
@@ -36,24 +48,4 @@
   .BlockAboutCopy {
     margin: 4rem 0;
   }
-
-  .BlockAboutCopy p {
-    margin-bottom: 4rem;
-  }
-
-}
-
-.BlockAboutCopy {
-  margin-top: 2rem 0;
-  font-size: 1.2rem;
-  display: block;
-}
-
-.BlockAboutCopy p {
-  margin: 0 2rem;
-}
-
-.BlockAboutContentImage {
-  background: url('../../../images/pic.png') center / contain;
-  background-repeat: no-repeat;
 }
