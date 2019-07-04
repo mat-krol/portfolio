@@ -5,8 +5,25 @@
   text-align: center;
 }
 
+.BlockContact > h2 {
+  margin: 0 0 2rem;
+}
+
+.BlockContact > p {
+  margin: 2rem 0;
+  font-size: 1.2rem;
+}
+
 @media only screen and (min-width: 900px) {
   .BlockContact {
     padding: 6rem 1rem 12rem;
+  }
+
+  .BlockContact > h2 {
+    margin: 0 0 4rem;
+  }
+
+  .BlockContact > p {
+    margin: 4rem 0;
   }
 }
