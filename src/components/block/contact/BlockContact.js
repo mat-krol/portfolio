@@ -6,6 +6,7 @@ function BlockContact(props) {
   return (
     <div className={classes.BlockContact} id="contact">
       <h2>Contact</h2>
+      <p>If you have any questions or would to work with me on a project, don't hesitate to drop me a message!</p>
       <Signup />      
     </div>
   )

@@ -13,6 +13,10 @@ h1, h2, h3 {
   font-family: 'Cabin', sans-serif;
 }
 
+h2 {
+  font-size: 2rem;
+}
+
 .ViewHome {
   max-width: 1100px;
   margin: 60px auto 30px;
