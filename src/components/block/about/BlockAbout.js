@@ -8,7 +8,8 @@ function BlockAbout(props) {
     <div className={classes.BlockAbout} id="about">
       <h2>About</h2>
       <div className={classes.BlockAboutCopy}>
-        <span>I have 1 year of professional experience using React to create apps and prototypes as well as using Gatsby for static sites.</span>
+        <span>I have 1 year of professional experience in using React to create responsive web apps and prototypes.</span>
+        <span>And 3 years of non-professional experience in using WordPress, HTML, CSS and Photoshop to create simple static pages.</span>
         {/* <p>My prior experience includes creating WordPress sites and web graphics for student societies</p> */}
       </div>
       <div className={classes.BlockAboutContent}>

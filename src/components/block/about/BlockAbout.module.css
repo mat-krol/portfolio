@@ -24,6 +24,10 @@
   margin: 2rem 0;
 }
 
+.BlockAboutCopy span {
+  display: block;
+}
+
 .BlockAboutContentImage {
   background: url('../../../images/pic.png') center / contain;
   background-repeat: no-repeat;

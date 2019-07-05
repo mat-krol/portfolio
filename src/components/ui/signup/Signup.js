@@ -4,22 +4,22 @@ import classes from './Signup.module.css'
 function Signup(props) {
 
   
-  const [submitted, setSubmitted] = React.useState(false)
+  // const [submitted, setSubmitted] = React.useState(false)
   
-  const [form, setValues] = React.useState({ name: '', email: '' });
+  // const [form, setValues] = React.useState({ name: '', email: '' });
   
-  const updateField = e => {
-    setValues({
-      ...form,
-      [e.target.name]: e.target.value
-    });
-  };
+  // const updateField = e => {
+  //   setValues({
+  //     ...form,
+  //     [e.target.name]: e.target.value
+  //   });
+  // };
   
-  const handleSubmit = e => {
-    e.preventDefault();
-    setValues({ firstName: '', email: '', checkbox: false })
-    setSubmitted(true)
-  }
+  // const handleSubmit = e => {
+  //   e.preventDefault();
+  //   setValues({ firstName: '', email: '', checkbox: false })
+  //   setSubmitted(true)
+  // }
  
   return (
     <div className={classes.SignupHolder}>

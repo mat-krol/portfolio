@@ -12,7 +12,7 @@ function BlockBanner(props) {
       </div>
       <div>
         <h1>Hi! My name is <span>Mat Krol</span></h1>
-        <p>I'm a web designer & a front end developer with a passion for clean and usable design</p>
+        <p>I'm a web designer & front end developer with a passion for clean and usable design</p>
       </div>
       <div>
          <h2 id="portfolio">Portfolio</h2> 
