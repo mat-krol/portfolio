@@ -23,7 +23,7 @@ function Signup(props) {
  
   return (
     <div className={classes.SignupHolder}>
-        <form className={classes.Signup} id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/YOUR_EMAIL_HERE" method="post">
+        <form className={classes.Signup} id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/hello@matkrol.work" method="post">
         <fieldset id="fs-frm-inputs">
             <input type="text" name="_gotcha" style={{ display: "none" }} />
             <label for="full-name">Name</label>
