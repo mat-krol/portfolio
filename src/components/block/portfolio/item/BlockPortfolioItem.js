@@ -17,6 +17,7 @@ const className = image => {
   const arr = [classes.BlockPortfolioItem]
   image === "polsoc" && arr.push(classes.BlockPortfolioItemPolSoc);
   image === "emmi" && arr.push(classes.BlockPortfolioItemEmmi);
+  image === "metro" && arr.push(classes.BlockPortfolioItemMetro);
   image === "camclass" && arr.push(classes.BlockPortfolioItemCamClass);
   image === "brainliens" && arr.push(classes.BlockPortfolioItemBrainliens);
   image === "masternotes" && arr.push(classes.BlockPortfolioItemMasternotes);
