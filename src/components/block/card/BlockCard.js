@@ -1,10 +1,12 @@
 import React from 'react'
 import classes from './BlockCard.module.css'
+import { MdClear } from "react-icons/md";
 
 function BlockCard(props) {
   return (
     <div className={className(props)}>
       <div className={imageClassName(props.image)} />
+      <MdClear className={classes.BlockCardClose} onClick={props.handleClose} />
     </div>
   )
 }
