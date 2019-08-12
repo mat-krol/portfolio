@@ -80,3 +80,21 @@
   visibility: visible;
   transform: scaleX(1);
 }
+
+.BlockBannerArrow {
+  animation: iconAnimation 5s ease infinite;
+}
+
+@keyframes iconAnimation { 
+  0% {
+    transform: translateY(0);
+  }
+
+  14% {
+    transform: translateY(10px);
+  }
+
+  20% {
+    transform: translateY(0)
+  }
+}

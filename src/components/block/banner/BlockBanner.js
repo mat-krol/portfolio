@@ -16,7 +16,7 @@ function BlockBanner(props) {
       </div>
       <div>
          <h2 id="portfolio">Portfolio</h2> 
-        <FaAngleDoubleDown />
+        <FaAngleDoubleDown className={classes.BlockBannerArrow} />
       </div>
     </div>
   )
