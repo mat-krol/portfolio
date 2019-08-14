@@ -1,14 +1,14 @@
 import React from "react"
 
 import "./ViewHome.module.css"
-import BlockPortfolio from "../../block/portfolio/BlockPortfolio";
-import BlockSeparator from "../../block/separator/BlockSeparator";
+import Backdrop from "../../ui/backdrop/Backdrop";
+import BlockAbout from "../../block/about/BlockAbout";
 import BlockBanner from "../../block/banner/BlockBanner";
 import BlockCard from "../../block/card/BlockCard";
-import SEO from "../../seo";
-import BlockAbout from "../../block/about/BlockAbout";
-import Backdrop from "../../ui/backdrop/Backdrop";
 import BlockContact from "../../block/contact/BlockContact";
+import BlockPortfolio from "../../block/portfolio/BlockPortfolio";
+import BlockSeo from "../../block/seo/BlockSeo";
+import BlockSeparator from "../../block/separator/BlockSeparator";
 
 function ViewHome(props) {
   const [showing, setShowing] = React.useState(false)
@@ -28,7 +28,7 @@ function ViewHome(props) {
 
   return (
     <>
-      <SEO title="Mat Krol - Portfolio" keywords={[`mat krol`, `front end developer`, `web designer`]} />
+      <BlockSeo title="Mat Krol - Portfolio" keywords={[`mat krol`, `front end developer`, `web designer`]} />
       <BlockBanner />
       <div style={{ position: "relative" }}>
         <BlockPortfolio handleShow={handleShow} />
