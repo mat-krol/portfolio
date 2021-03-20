@@ -1,13 +1,18 @@
-import React from 'react'
-import classes from './BlockContact.module.css'
-import Signup from '../../ui/signup/Signup';
+import React from "react"
 
-function BlockContact(props) {
+import Signup from "../../ui/signup/Signup"
+
+import * as styles from "./BlockContact.module.css"
+
+function BlockContact() {
   return (
-    <div className={classes.BlockContact} id="contact">
+    <div className={styles.BlockContact} id="contact">
       <h2>Contact</h2>
-      <p>If you have any questions or would like to work on a project with me, don't hesitate to drop me a message!</p>
-      <Signup />      
+      <p>
+        If you have any questions or would like to work on a project with me,
+        don't hesitate to drop me a message!
+      </p>
+      <Signup />
     </div>
   )
 }

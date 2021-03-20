@@ -1,4 +1,4 @@
-.BlockCard {
+.wrapper {
   position: relative;
   position: absolute;
   top: 0;
@@ -8,80 +8,69 @@
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-}
 
-.BlockCardClose {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 20px;
-  font-size: 24px;
-  cursor: pointer;
-}
-
-@media only screen and (min-width: 1200px) {
-  .BlockCard {
+  @media only screen and (min-width: 1200px) {
     left: calc(50vw - 600px);
   }
 }
 
-.BlockCardShow {
+.close {
+  padding: 8px;
+  font-size: 24px;
+  cursor: pointer;
+  float: right;
+}
+
+.show {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
-  transition: opacity 0.5s ease 0.1s, transform 0.5s ease 0.1s, visibility 0s ease 0s;
+  transition: opacity 0.5s ease 0.1s, transform 0.5s ease 0.1s,
+    visibility 0s ease 0s;
 }
 
-.BlockCardHide {
+.hide {
   opacity: 0;
   visibility: hidden;
   transform: translateY(-25px);
-  transition: opacity 0.5s ease 0.1s, transform 0.5s ease 0.1s, visibility 0s ease 0.5s;
+  transition: opacity 0.5s ease 0.1s, transform 0.5s ease 0.1s,
+    visibility 0s ease 0.5s;
 }
 
-.BlockCardImage {
+.image {
   width: 100%;
   height: 67vw;
   overflow-y: auto;
-}
 
-@media only screen and (min-width: 1200px) {
-  .BlockCardImage {
+  @media only screen and (min-width: 1200px) {
     height: 800px;
   }
 }
 
-.BlockCardCopy {
-  width: 100%;
-  padding: 1rem;
-  box-sizing: border-box;
-  border-top: 5px solid black;
+.polsoc {
+  background: url("../../../images/portfolio/polsoc.png") center top / cover;
 }
 
-.BlockPortfolioItemPolSoc {
-  background: url('../../../images/portfolio/polsoc.png') center top / cover;
+.emmi {
+  background: url("../../../images/portfolio/emmi.png") center top / cover;
 }
 
-.BlockPortfolioItemEmmi {
-  background: url('../../../images/portfolio/emmi.png') center top / cover;
+.camclass {
+  background: url("../../../images/portfolio/camclass.png") center top / cover;
 }
 
-.BlockPortfolioItemCamClass {
-  background: url('../../../images/portfolio/camclass.png') center top / cover;
+.emmimobile {
+  background: url("../../../images/portfolio/em.png") center top / cover;
 }
 
-.BlockPortfolioItemEmmiMobile {
-  background: url('../../../images/portfolio/em.png') center top / cover;
+.brainliens {
+  background: url("../../../images/portfolio/bl.png") center top / cover;
 }
 
-.BlockPortfolioItemBrainliens {
-  background: url('../../../images/portfolio/bl.png') center top / cover;
+.masternotes {
+  background: url("../../../images/portfolio/mn.png") center top / cover;
 }
 
-.BlockPortfolioItemMasternotes {
-  background: url('../../../images/portfolio/mn.png') center top / cover;
-}
-
-.BlockPortfolioItemMetro {
-  background: url('../../../images/portfolio/metro.png') center top / cover;
+.metro {
+  background: url("../../../images/portfolio/metro.png") center top / cover;
 }

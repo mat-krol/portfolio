@@ -20,7 +20,7 @@
 }
 
 .BlockBanner h2 {
-  margin: 0 0 4px
+  margin: 0 0 4px;
 }
 
 .BlockBanner svg {
@@ -85,7 +85,7 @@
   animation: iconAnimation 5s ease infinite;
 }
 
-@keyframes iconAnimation { 
+@keyframes iconAnimation {
   0% {
     transform: translateY(0);
   }
@@ -95,6 +95,6 @@
   }
 
   20% {
-    transform: translateY(0)
+    transform: translateY(0);
   }
 }

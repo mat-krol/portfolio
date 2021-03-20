@@ -1,28 +1,32 @@
-import React from 'react'
-import classes from './BlockPortfolioItem.module.css'
+import React from "react"
+
+import * as styles from "./BlockPortfolioItem.module.css"
 
 function BlockPortfolioItem(props) {
   return (
-      <div className={className(props.image)} onClick={() => props.onClick(props.image)}>
-        <div className={classes.BlockPortfolioItemContent}>
-          <h2>{props.heading}</h2>
-          <span>{props.subheading}</span>
-          <p>{props.tech}</p>
-        </div>
+    <div
+      className={className(props.image)}
+      onClick={() => props.onClick(props.image)}
+    >
+      <div className={styles.BlockPortfolioItemContent}>
+        <h2>{props.heading}</h2>
+        <span>{props.subheading}</span>
+        <p>{props.tech}</p>
       </div>
+    </div>
   )
 }
 
 const className = image => {
-  const arr = [classes.BlockPortfolioItem]
-  image === "polsoc" && arr.push(classes.BlockPortfolioItemPolSoc);
-  image === "emmi" && arr.push(classes.BlockPortfolioItemEmmi);
-  image === "metro" && arr.push(classes.BlockPortfolioItemMetro);
-  image === "camclass" && arr.push(classes.BlockPortfolioItemCamClass);
-  image === "brainliens" && arr.push(classes.BlockPortfolioItemBrainliens);
-  image === "masternotes" && arr.push(classes.BlockPortfolioItemMasternotes);
-  image === "emmi-mobile" && arr.push(classes.BlockPortfolioItemEmmiMobile);
-  return arr.join(' ')
+  const arr = [styles.BlockPortfolioItem]
+  image === "polsoc" && arr.push(styles.BlockPortfolioItemPolSoc)
+  image === "emmi" && arr.push(styles.BlockPortfolioItemEmmi)
+  image === "metro" && arr.push(styles.BlockPortfolioItemMetro)
+  image === "camclass" && arr.push(styles.BlockPortfolioItemCamClass)
+  image === "brainliens" && arr.push(styles.BlockPortfolioItemBrainliens)
+  image === "masternotes" && arr.push(styles.BlockPortfolioItemMasternotes)
+  image === "emmi-mobile" && arr.push(styles.BlockPortfolioItemEmmiMobile)
+  return arr.join(" ")
 }
 
 export default BlockPortfolioItem

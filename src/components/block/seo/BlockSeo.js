@@ -1,9 +1,8 @@
 import React from "react"
-import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function BlockSeo({ description, lang, meta, keywords, title }) {
+export default function BlockSeo({ description, lang, meta, keywords, title }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -65,28 +64,12 @@ function BlockSeo({ description, lang, meta, keywords, title }) {
         .concat(
           keywords.length > 0
             ? {
-              name: `keywords`,
-              content: keywords.join(`, `),
-            }
+                name: `keywords`,
+                content: keywords.join(`, `),
+              }
             : []
         )
         .concat(meta)}
     />
   )
 }
-
-BlockSeo.defaultProps = {
-  lang: `en`,
-  meta: [],
-  keywords: [],
-}
-
-BlockSeo.propTypes = {
-  description: PropTypes.string,
-  lang: PropTypes.string,
-  meta: PropTypes.array,
-  keywords: PropTypes.arrayOf(PropTypes.string),
-  title: PropTypes.string.isRequired,
-}
-
-export default BlockSeo

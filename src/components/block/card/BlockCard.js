@@ -1,32 +1,29 @@
-import React from 'react'
-import classes from './BlockCard.module.css'
-import { MdClear } from "react-icons/md";
+import React from "react"
+import { MdClear } from "react-icons/md"
+import classnames from "classnames"
 
-function BlockCard(props) {
+import * as styles from "./BlockCard.module.css"
+
+export default function BlockCard({ show, image, handleClose }) {
   return (
-    <div className={className(props)}>
-      <div className={imageClassName(props.image)} />
-      <MdClear className={classes.BlockCardClose} onClick={props.handleClose} />
+    <div
+      className={classnames(styles.wrapper, {
+        [styles.show]: show,
+        [styles.hide]: !show,
+      })}
+    >
+      <MdClear className={styles.close} onClick={handleClose} />
+      <div
+        className={classnames(styles.image, {
+          [styles.emmi]: image === "emmi",
+          [styles.metro]: image === "metro",
+          [styles.polsoc]: image === "polsoc",
+          [styles.camclass]: image === "camclass",
+          [styles.brainliens]: image === "brainliens",
+          [styles.masternotes]: image === "masternotes",
+          [styles.emmimobile]: image === "emmi-mobile",
+        })}
+      />
     </div>
   )
 }
-
-const className = props => {
-  const arr = [classes.BlockCard]
-  props.show ? arr.push(classes.BlockCardShow) : arr.push(classes.BlockCardHide);
-  return arr.join(' ')
-}
-
-const imageClassName = image => {
-  const arr = [classes.BlockCardImage]
-  image === "emmi" && arr.push(classes.BlockPortfolioItemEmmi);
-  image === "metro" && arr.push(classes.BlockPortfolioItemMetro);
-  image === "polsoc" && arr.push(classes.BlockPortfolioItemPolSoc);
-  image === "camclass" && arr.push(classes.BlockPortfolioItemCamClass);
-  image === "brainliens" && arr.push(classes.BlockPortfolioItemBrainliens);
-  image === "masternotes" && arr.push(classes.BlockPortfolioItemMasternotes);
-  image === "emmi-mobile" && arr.push(classes.BlockPortfolioItemEmmiMobile);
-  return arr.join(' ')
-}
-
-export default BlockCard
