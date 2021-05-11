@@ -8,7 +8,13 @@
 
 .BlockPortfolioContent {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
+}
+
+@media only screen and (min-width: 600px) {
+  .BlockPortfolioContent {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media only screen and (min-width: 900px) {

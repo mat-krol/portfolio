@@ -1,32 +1,23 @@
 import React from "react"
 
-import * as styles from "./BlockPortfolioItem.module.css"
+import * as styles from "./BlockPortfolioItem.module.scss"
 
-function BlockPortfolioItem(props) {
+export default function BlockPortfolioItem({
+  id,
+  image,
+  heading,
+  subheading,
+  tech,
+  onClick,
+}) {
   return (
-    <div
-      className={className(props.image)}
-      onClick={() => props.onClick(props.image)}
-    >
-      <div className={styles.BlockPortfolioItemContent}>
-        <h2>{props.heading}</h2>
-        <span>{props.subheading}</span>
-        <p>{props.tech}</p>
+    <div className={styles.wrapper} onClick={() => onClick(id)}>
+      <div className={styles.content}>
+        <h2>{heading}</h2>
+        <span>{subheading}</span>
+        <p>{tech}</p>
       </div>
+      <img src={image} className={styles.image} />
     </div>
   )
 }
-
-const className = image => {
-  const arr = [styles.BlockPortfolioItem]
-  image === "polsoc" && arr.push(styles.BlockPortfolioItemPolSoc)
-  image === "emmi" && arr.push(styles.BlockPortfolioItemEmmi)
-  image === "metro" && arr.push(styles.BlockPortfolioItemMetro)
-  image === "camclass" && arr.push(styles.BlockPortfolioItemCamClass)
-  image === "brainliens" && arr.push(styles.BlockPortfolioItemBrainliens)
-  image === "masternotes" && arr.push(styles.BlockPortfolioItemMasternotes)
-  image === "emmi-mobile" && arr.push(styles.BlockPortfolioItemEmmiMobile)
-  return arr.join(" ")
-}
-
-export default BlockPortfolioItem
