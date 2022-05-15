@@ -1,0 +1,100 @@
+.BlockBanner {
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.BlockBanner h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.BlockBanner h1 span {
+  white-space: nowrap;
+}
+
+.BlockBanner h2 {
+  margin: 0 0 4px
+}
+
+.BlockBanner svg {
+  color: #666;
+  font-size: 0.8rem;
+}
+
+.BlockBanner p {
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+@media only screen and (min-width: 900px) {
+  .BlockBanner {
+    height: 100vh;
+  }
+
+  .BlockBanner h1 {
+    font-size: 5rem;
+  }
+
+  .BlockBanner p {
+    font-size: 1.2rem;
+  }
+}
+
+.BlockBannerNav > a {
+  margin: 0 8px;
+  color: #000;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color ease 0.3s;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.BlockBannerNav a:hover {
+  color: #2442bd;
+}
+
+.BlockBannerNav > a:after {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #2442bd;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all ease 0.3s;
+}
+
+.BlockBannerNav > a:hover:after {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.BlockBannerArrow {
+  animation: iconAnimation 5s ease infinite;
+}
+
+@keyframes iconAnimation { 
+  0% {
+    transform: translateY(0);
+  }
+
+  14% {
+    transform: translateY(10px);
+  }
+
+  20% {
+    transform: translateY(0)
+  }
+}

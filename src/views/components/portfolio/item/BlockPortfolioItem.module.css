@@ -1,0 +1,77 @@
+.BlockPortfolioItem {
+  position: relative;
+  width: 100%;
+  height: 33vw;
+  background: #f6f6f6;
+  display: flex;
+}
+
+.BlockPortfolioItemPolSoc {
+  background: url('../../../../images/portfolio/polsoc.png') center top / cover;
+}
+
+.BlockPortfolioItemEmmi {
+  background: url('../../../../images/portfolio/emmi.png') center top / cover;
+}
+
+.BlockPortfolioItemCamClass {
+  background: url('../../../../images/portfolio/camclass.png') center top / cover;
+}
+
+.BlockPortfolioItemEmmiMobile {
+  background: url('../../../../images/portfolio/em.png') center top / cover, linear-gradient(#f3f3f3, #f3f3f3);
+}
+
+.BlockPortfolioItemBrainliens {
+  background: url('../../../../images/portfolio/bl.png') center top / cover, linear-gradient(#f3f3f3, #f3f3f3);
+}
+
+.BlockPortfolioItemMasternotes {
+  background: url('../../../../images/portfolio/mn.png') center top / cover, linear-gradient(#f3f3f3, #f3f3f3);
+}
+
+.BlockPortfolioItemMetro {
+  background: url('../../../../images/portfolio/metro.png') center top / cover, linear-gradient(#f3f3f3, #f3f3f3);
+}
+
+.BlockPortfolioItemContent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #f6f6f6f0;
+  opacity: 0;
+  transition: opacity ease 0.3s;
+}
+
+.BlockPortfolioItemContent h2 {
+  margin: 0;
+}
+
+.BlockPortfolioItemContent {
+  visibility: hidden;
+}
+
+.BlockPortfolioItemContent span {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #000000c0;
+  font-size: 12px;
+}
+
+.BlockPortfolioItem:hover .BlockPortfolioItemContent {
+  opacity: 1;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 900px) {
+  .BlockPortfolioItem {
+    height: 22vw;
+  }
+  
+  .BlockPortfolioItemContent {
+    visibility: visible;
+  }
+}

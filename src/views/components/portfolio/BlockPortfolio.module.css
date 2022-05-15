@@ -1,0 +1,24 @@
+.BlockPortfolio {
+  background: white;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.BlockPortfolioContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media only screen and (min-width: 900px) {
+  .BlockPortfolioContent {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .BlockPortfolioContent > :nth-child(3),
+  .BlockPortfolioContent > :nth-child(5),
+  .BlockPortfolioContent > :nth-child(6) {
+    order: 1;
+  }
+}

@@ -1,0 +1,44 @@
+.BlockAbout {
+  width: 100%;
+  padding: 8rem 1rem 4rem;
+  box-sizing: border-box;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 14px;
+}
+
+.BlockAboutContent {
+  max-width: 1200px;
+  width: 100%;
+  display: grid;
+  margin: 4rem auto;
+  grid-template-columns: 1fr;
+  grid-column-gap: 4rem;
+  grid-row-gap: 1rem;
+  text-align: left;
+  justify-content: center;
+}
+
+.BlockAboutCopy {
+  font-size: 1rem;
+  margin: 2rem 0;
+}
+
+.BlockAboutCopy span {
+  display: block;
+}
+
+@media only screen and (min-width: 900px) {
+  .BlockAbout {
+    padding: 14rem 1rem 10rem;
+  }
+
+  .BlockAboutContent {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .BlockAboutCopy {
+    margin: 4rem 0;
+    font-size: 1.2rem;
+  }
+}
