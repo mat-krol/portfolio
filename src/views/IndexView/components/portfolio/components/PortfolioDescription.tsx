@@ -1,13 +1,15 @@
 import { Box, Button, Center, Heading, Stack, Text } from "@chakra-ui/react";
+import { Link } from "gatsby";
 import React from "react";
 
 type Props = {
   title: string;
   subtitle: string;
   tech: string;
+  slug?: string;
 };
 
-export function PortfolioDescription({ title, subtitle, tech }: Props) {
+export function PortfolioDescription({ title, subtitle, tech, slug }: Props) {
   return (
     <Box position="relative" paddingTop="57%">
       <Center
@@ -26,15 +28,17 @@ export function PortfolioDescription({ title, subtitle, tech }: Props) {
             <Text fontSize="xs">{subtitle}</Text>
           </Stack>
           <Text>{tech}</Text>
-          <Button
-            colorScheme="blue"
-            backgroundColor="#2442bd"
-            fontWeight="normal"
-            _hover={{ backgroundColor: "#122987" }}
-            disabled
-          >
-            Read More
-          </Button>
+          <Link to={`/projects/${slug}`}>
+            <Button
+              colorScheme="blue"
+              backgroundColor="#2442bd"
+              fontWeight="normal"
+              _hover={{ backgroundColor: "#122987" }}
+              disabled={!slug}
+            >
+              Read More
+            </Button>
+          </Link>
         </Stack>
       </Center>
     </Box>

@@ -36,12 +36,14 @@ const projectList = [
     subtitle: "Static Site",
     tech: "Next.js",
     src: "ywa/cover.png",
+    slug: "yoga-with-ania",
   },
   {
     title: "UWC Poland",
     subtitle: "Static Site",
     tech: "Next.js",
     src: "uwc/cover.png",
+    slug: "uwc-poland",
   },
   {
     title: "Portfolio",
