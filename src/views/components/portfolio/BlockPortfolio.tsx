@@ -1,4 +1,4 @@
-import { Box, Grid, Image, useBreakpointValue } from "@chakra-ui/react";
+import { Grid, Stack, useBreakpointValue } from "@chakra-ui/react";
 import React from "react";
 
 import { PortfolioDescription } from "./components/PortfolioDescription";
@@ -8,31 +8,28 @@ type Props = { list: any[] };
 
 export function BlockPortfolio({ list }: Props) {
   const noOfColumns = useBreakpointValue({
-    base: 1,
-    md: 2,
     lg: 3,
   });
 
   if (noOfColumns === 3)
     return (
       <Grid gridTemplateColumns="1fr 1fr 1fr" columnGap={4}>
-        {[...list, ...list].map((item, i) =>
-          i % 2 === 0 ? (
-            <PortfolioImage src={item.src} />
-          ) : (
-            <PortfolioDescription {...item} key={item.title} />
-          )
-        )}
+        {list.map((item) => (
+          <PortfolioDescription key={item.src} {...item} />
+        ))}
+        {list.map((item) => (
+          <PortfolioImage key={item.src} src={item.src} />
+        ))}
       </Grid>
     );
 
   return (
-    <Grid gridTemplateColumns="1fr 1fr">
-      {[...list, ...list].map((item, i) => (
-        <>
-          <PortfolioImage src={item.src} />
+    <Grid gridTemplateColumns={{ base: "1fr", md: "1fr 1fr" }} rowGap={4}>
+      {list.map((item) => (
+        <Stack spacing={0}>
           <PortfolioDescription {...item} key={item.title} />
-        </>
+          <PortfolioImage src={item.src} key={item.src} />
+        </Stack>
       ))}
     </Grid>
   );

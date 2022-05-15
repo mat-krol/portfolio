@@ -27,19 +27,19 @@ const projectList = [
     title: "Yoga with Ania",
     subtitle: "Static Site",
     tech: "Next.js",
-    src: "ywa/main.png",
+    src: "ywa/cover.png",
   },
   {
     title: "UWC Poland",
     subtitle: "Static Site",
     tech: "Next.js",
-    src: "uwc/main.png",
+    src: "uwc/cover.png",
   },
   {
     title: "Portfolio",
     subtitle: "Site",
     tech: "Gatsby",
-    src: "camclass",
+    src: "portfolio/cover.png",
   },
 ];
 
@@ -48,18 +48,18 @@ const experienceList = [
     title: "Academy",
     subtitle: "Jun 2021 - now",
     tech: "React, TypeScript, PostgreSQL, Next.js",
-    src: "camclass",
+    src: "academy/cover.png",
   },
   {
     title: "Seneca Learning",
     subtitle: "Oct 2019 - May 2021",
     tech: "React + Redux, AWS, Node.js, Gatsby",
-    src: "emmi",
+    src: "seneca/cover.png",
   },
   {
     title: "OneMaths",
     subtitle: "Oct 2018 - Jul 2019",
     tech: "JavaScript, Ruby on Rails, React",
-    src: "om/main.png",
+    src: "om/cover.png",
   },
 ];
