@@ -1,63 +1,39 @@
+import { Box, Grid, Image, useBreakpointValue } from "@chakra-ui/react";
 import React from "react";
 
-//@ts-ignore
-import * as styles from "./BlockPortfolio.module.css";
-import { BlockPortfolioItem } from "./item/BlockPortfolioItem";
+import { PortfolioDescription } from "./components/PortfolioDescription";
+import { PortfolioImage } from "./components/PortfolioImage";
 
-const list = [
-  {
-    key: 4,
-    heading: "Emmi.ai",
-    subheading: "Web App",
-    tech: "React + Redux, CSS",
-    image: "emmi-mobile",
-  },
-  {
-    key: 1,
-    heading: "Emmi.ai",
-    subheading: "Static Pages",
-    tech: "Gatsby, React.js, Photoshop",
-    image: "emmi",
-  },
-  {
-    key: 2,
-    heading: "Cambridge cLASs",
-    subheading: "Wordpress Site",
-    tech: "Wordpress, CSS",
-    image: "camclass",
-  },
-  // { key: 5, heading: "Brainliens", subheading: "Game Prototype", tech: "React.js, CSS, Photoshop", image: "brainliens" },
-  {
-    key: 5,
-    heading: "Metro Metro Metro",
-    subheading: "Game Prototype",
-    tech: "React.js, CSS, Photoshop",
-    image: "metro",
-  },
-  {
-    key: 6,
-    heading: "Masternotes",
-    subheading: "App Prototype",
-    tech: "React.js, CSS, Photoshop",
-    image: "masternotes",
-  },
-  {
-    key: 3,
-    heading: "CU PolSoc",
-    subheading: "Wordpress Site",
-    tech: "Wordpress, CSS",
-    image: "polsoc",
-  },
-];
+type Props = { list: any[] };
 
-export function BlockPortfolio() {
+export function BlockPortfolio({ list }: Props) {
+  const noOfColumns = useBreakpointValue({
+    base: 1,
+    md: 2,
+    lg: 3,
+  });
+
+  if (noOfColumns === 3)
+    return (
+      <Grid gridTemplateColumns="1fr 1fr 1fr" columnGap={4}>
+        {[...list, ...list].map((item, i) =>
+          i % 2 === 0 ? (
+            <PortfolioImage src={item.src} />
+          ) : (
+            <PortfolioDescription {...item} key={item.title} />
+          )
+        )}
+      </Grid>
+    );
+
   return (
-    <div className={styles.BlockPortfolio}>
-      <div className={styles.BlockPortfolioContent}>
-        {list.map((item) => (
-          <BlockPortfolioItem {...item} />
-        ))}
-      </div>
-    </div>
+    <Grid gridTemplateColumns="1fr 1fr">
+      {[...list, ...list].map((item, i) => (
+        <>
+          <PortfolioImage src={item.src} />
+          <PortfolioDescription {...item} key={item.title} />
+        </>
+      ))}
+    </Grid>
   );
 }
