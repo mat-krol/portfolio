@@ -1,3 +1,4 @@
+import { Heading, Stack } from "@chakra-ui/react";
 import React from "react";
 import "./IndexView.css";
 
@@ -13,9 +14,16 @@ export function IndexView() {
     <>
       <MetaData title="Mat Krol - Portfolio" />
       <BlockBanner />
-      <BlockPortfolio list={projectList} />
-      <h2 id="professional">Professional Experience</h2>
-      <BlockPortfolio list={experienceList} />
+      <Stack spacing="200px" align="center">
+        <BlockPortfolio list={projectList} />
+        <Stack spacing={8} align="center">
+          <Heading as="h2" id="professional">
+            Professional Experience
+          </Heading>
+          <BlockPortfolio list={experienceList} />
+        </Stack>
+      </Stack>
+
       <BlockAbout />
       <BlockSeparator />
     </>
