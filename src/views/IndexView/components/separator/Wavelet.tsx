@@ -4,7 +4,7 @@ export function Wavelet() {
   return (
     <svg
       viewBox="0 0 1050 90"
-      style={{ height: "35px" }}
+      style={{ height: "35px", width: "100%" }}
       preserveAspectRatio="none"
     >
       <defs>

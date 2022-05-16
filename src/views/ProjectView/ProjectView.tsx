@@ -1,4 +1,4 @@
-import { Box, Grid, Heading, Image, Stack, Text } from "@chakra-ui/react";
+import { Box, Grid, Heading, Image, Stack, Text, useBreakpointValue } from "@chakra-ui/react";
 import { PropsWithChildren } from "@reach/router/node_modules/@types/react";
 import { Link } from "gatsby";
 import React from "react";
@@ -22,20 +22,25 @@ export function ProjectView({
   tech,
   children,
 }: PropsWithChildren<Props>) {
+  const isDesktop = useBreakpointValue({ base: false, lg: true });
+
   return (
     <>
       <MetaData title={title + " - Mat Krol - Portfolio"} />
       <Grid
-        gridTemplateColumns="2fr 3fr"
+        gridTemplateColumns={{ base: "1fr", lg: "2fr 3fr" }}
         gridGap={16}
-        minH="100vh"
+        minH={{ lg: "100vh" }}
         backgroundColor="gray.100"
       >
-        <Box backgroundColor={imgBg || "white"}>
-          <Image src={imgSrc} />
-        </Box>
+        {isDesktop && (
+          <Box backgroundColor={imgBg || "white"}>
+            <Image src={imgSrc} width="100%" />
+          </Box>
+        )}
+
         <Stack paddingY={16} spacing={16}>
-          <Stack>
+          <Stack paddingX={{ base: 4, lg: 0 }}>
             {/* @ts-ignore */}
             <Link to="/">
               <Stack direction="row" align="center" marginBottom={6}>
@@ -53,10 +58,12 @@ export function ProjectView({
             <Text>{tech}</Text>
           </Stack>
           <Wavelet />
-          <Stack maxWidth="480px" spacing={8}>
+          <Stack maxWidth="480px" spacing={8} paddingX={{ base: 4, lg: 0 }}>
             {children}
           </Stack>
         </Stack>
+
+        {isDesktop || <Image src={imgSrc} width="100%" />}
       </Grid>
     </>
   );
