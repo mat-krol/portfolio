@@ -1,6 +1,7 @@
 import { Button, Flex, Heading, Image, Stack, Text } from "@chakra-ui/react";
 import { Link } from "gatsby";
 import React from "react";
+import { BsChevronRight } from "react-icons/bs";
 
 type Props = {
   title: string;
@@ -18,12 +19,7 @@ export function PortfolioDescription({
   slug,
 }: Props) {
   return (
-    <Stack
-      spacing={4}
-      width="100%"
-      border={{ base: "none", md: "1px solid #ccc" }}
-      padding={4}
-    >
+    <Stack spacing={4} width="100%" backgroundColor="gray.100" padding={4}>
       <Image src={src} />
       <Text>{tech}</Text>
 
@@ -35,6 +31,7 @@ export function PortfolioDescription({
           <Text fontSize="xs">{subtitle}</Text>
         </Stack>
 
+        {/* @ts-ignore */}
         <Link to={`/projects/${slug}`}>
           <Button
             colorScheme="blue"
@@ -42,6 +39,7 @@ export function PortfolioDescription({
             fontWeight="normal"
             _hover={{ backgroundColor: "#122987" }}
             disabled={!slug}
+            rightIcon={<BsChevronRight />}
           >
             Learn More
           </Button>

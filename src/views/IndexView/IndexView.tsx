@@ -7,7 +7,6 @@ import { MetaData } from "../../components/MetaData";
 import { BlockAbout } from "./components/about/BlockAbout";
 import { BlockBanner } from "./components/banner/BlockBanner";
 import { BlockPortfolio } from "./components/portfolio/BlockPortfolio";
-import { BlockSeparator } from "./components/separator/BlockSeparator";
 
 export function IndexView() {
   return (
@@ -25,7 +24,6 @@ export function IndexView() {
       </Stack>
 
       <BlockAbout />
-      <BlockSeparator />
     </>
   );
 }
@@ -50,6 +48,7 @@ const projectList = [
     subtitle: "Site",
     tech: "Gatsby",
     src: "portfolio/cover.png",
+    slug: "portfolio",
   },
 ];
 
@@ -59,17 +58,20 @@ const experienceList = [
     subtitle: "Jun 2021 - now",
     tech: "React, TypeScript, PostgreSQL, Next.js",
     src: "academy/cover.png",
+    slug: "academy",
   },
   {
     title: "Seneca Learning",
     subtitle: "Oct 2019 - May 2021",
     tech: "React + Redux, AWS, Node.js, Gatsby",
     src: "seneca/cover.png",
+    slug: "seneca",
   },
   {
-    title: "OneMaths",
+    title: "One Maths",
     subtitle: "Oct 2018 - Jul 2019",
     tech: "JavaScript, Ruby on Rails, React",
     src: "om/cover.png",
+    slug: "one-maths",
   },
 ];
