@@ -1,6 +1,8 @@
-import { Box, Grid, Heading, Image, Stack, Text } from "@chakra-ui/react";
+import { Box, Flex, Grid, Heading, Image, Stack, Text } from "@chakra-ui/react";
 import { PropsWithChildren } from "@reach/router/node_modules/@types/react";
+import { Link } from "gatsby";
 import React from "react";
+import { BsChevronLeft } from "react-icons/bs";
 
 import { MetaData } from "../components/MetaData";
 
@@ -29,7 +31,18 @@ export function ProjectView({
         </Box>
         <Stack paddingY={16} spacing={16}>
           <Stack>
-            <Text>Mat Krol</Text>
+            <Link to="/">
+              <Stack direction="row" align="center" marginBottom={6}>
+                <BsChevronLeft />
+                <Text
+                  textTransform="uppercase"
+                  fontSize="xs"
+                  letterSpacing="1px"
+                >
+                  Back to Mat Krol's Projects
+                </Text>
+              </Stack>
+            </Link>
             <Heading>{title}</Heading>
             <Text>{tech}</Text>
           </Stack>

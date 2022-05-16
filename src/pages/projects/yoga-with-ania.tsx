@@ -7,7 +7,7 @@ export default function YWAView() {
   return (
     <ProjectView
       title="Yoga With Ania"
-      imgBg="white"
+      imgBg="#E9F1EF"
       imgSrc="/ywa/index.png"
       tech="Next.js"
     >

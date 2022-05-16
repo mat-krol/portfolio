@@ -36,7 +36,7 @@ export function PortfolioDescription({ title, subtitle, tech, slug }: Props) {
               _hover={{ backgroundColor: "#122987" }}
               disabled={!slug}
             >
-              Read More
+              Learn More
             </Button>
           </Link>
         </Stack>
