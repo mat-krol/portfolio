@@ -1,12 +1,12 @@
-import { Box, Flex, Grid, Heading, Image, Stack, Text } from "@chakra-ui/react";
+import { Box, Grid, Heading, Image, Stack, Text } from "@chakra-ui/react";
 import { PropsWithChildren } from "@reach/router/node_modules/@types/react";
 import { Link } from "gatsby";
 import React from "react";
 import { BsChevronLeft } from "react-icons/bs";
 
-import { MetaData } from "../components/MetaData";
+import { MetaData } from "../../components/MetaData";
 
-import { Wavelet } from "./IndexView/components/separator/Wavelet";
+import { Wavelet } from "../IndexView/components/separator/Wavelet";
 
 type Props = {
   title: string;
@@ -25,12 +25,18 @@ export function ProjectView({
   return (
     <>
       <MetaData title={title + " - Mat Krol - Portfolio"} />
-      <Grid gridTemplateColumns="2fr 3fr" gridGap={16} minH="100vh">
-        <Box bgColor={imgBg}>
+      <Grid
+        gridTemplateColumns="2fr 3fr"
+        gridGap={16}
+        minH="100vh"
+        backgroundColor="gray.100"
+      >
+        <Box backgroundColor={imgBg || "white"}>
           <Image src={imgSrc} />
         </Box>
         <Stack paddingY={16} spacing={16}>
           <Stack>
+            {/* @ts-ignore */}
             <Link to="/">
               <Stack direction="row" align="center" marginBottom={6}>
                 <BsChevronLeft />
@@ -47,7 +53,9 @@ export function ProjectView({
             <Text>{tech}</Text>
           </Stack>
           <Wavelet />
-          <Stack>{children}</Stack>
+          <Stack maxWidth="480px" spacing={8}>
+            {children}
+          </Stack>
         </Stack>
       </Grid>
     </>
