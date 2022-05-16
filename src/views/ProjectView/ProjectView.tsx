@@ -34,7 +34,7 @@ export function ProjectView({
         backgroundColor="gray.100"
       >
         {isDesktop && (
-          <Box backgroundColor={imgBg || "white"}>
+          <Box backgroundColor={imgBg || "white"} width="100%">
             <Image src={imgSrc} width="100%" />
           </Box>
         )}
